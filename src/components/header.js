@@ -1,42 +1,42 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+const Header = () => (
+  <section className='header'>
+    <div>
+      <h1>Youngyun</h1>
     </div>
-  </header>
+    <div>
+      {/* <p>Designer, Developer, </p> */}
+      <code>
+        <div>&#123;</div>
+        <div className='pl-2'>'working': [</div>
+        <div className='pl-4'>'Designer', 'Developer',</div>
+        <div className='pl-2'>]</div>
+        <div className='pl-2'>'studied': [</div>
+        <div className='pl-4'>'Visual Communication Design',</div>
+        <div className='pl-4'>'Computer Applications Development',</div>
+        <div className='pl-2'>]</div>
+        <div className='pl-2'>'skills': &#123;</div>
+        <div className='pl-4'>'Front-end': &#123; 'HTML', 'CSS', 'SASS', 'React', 'Gatsby', 'Framework7' &#125;,</div>
+        <div className='pl-4'>'Back-end': &#123; 'Node.js', 'express.js', 'Mongoose'  &#125;,</div>
+        <div className='pl-4'>'python': &#123; 'requests', 'Beautiful Soup', 'flask' &#125;,</div>
+        <div className='pl-4'>'Database': &#123; 'MS SQL', 'MySQL', 'MongoDB' &#125;,</div>
+        <div className='pl-4'>'Web Development': &#123; 'ASP.NET MVC' &#125;,</div>
+        <div className='pl-4'>'App Development': &#123; 'firebase' &#125;,</div>
+        <div className='pl-4'>'Prototyping': &#123; 'proto.io', 'InVision', 'sketch', 'JustInMind' &#125;,</div>
+        <div className='pl-4'>'Graphic': &#123; 'Adobe CC' &#125;,</div>
+        <div className='pl-2'>&#125;</div>
+        <div>&#125;</div>
+      </code>
+      <div className='social-media'>
+        <Link to='/'>LinkdIn</Link>
+        <Link to='/'>GitHub</Link>
+        <Link to='/'>Instagram</Link>
+      </div>
+    </div>
+  </section>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
