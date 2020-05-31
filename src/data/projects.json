@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "image": "../images/projects/london.jpg",
+    "title": "Human-machine learning Interface",
+    "description": "Sample 1 description here",
+    "tags": ["python", "ML", "D3.js", "HTML", "CSS", "JavaScripts"],
+    "link": "google.com",
+    "github": "google.com"
+  },
+  {
+    "id": 2,
+    "image": "../images/projects/london.jpg",
+    "title": "Skyshop",
+    "description": "Sample 2 description here",
+    "tags": ["HTML", "CSS", "JavaScripts"],
+    "link": "google.com"
+  },
+  {
+    "id": 3,
+    "image": "../images/projects/london.jpg",
+    "title": "Skyshop",
+    "description": "Sample 2 description here",
+    "tags": ["HTML", "CSS", "JavaScripts"],
+    "link": "google.com"
+  },
+  {
+    "id": 4,
+    "image": "../images/projects/london.jpg",
+    "title": "Skyshop",
+    "description": "Sample 2 description here",
+    "tags": ["HTML", "CSS", "JavaScripts"],
+    "link": "google.com"
+  },
+  {
+    "id": 6,
+    "image": "../images/projects/london.jpg",
+    "title": "Skyshop",
+    "description": "Sample 2 description here",
+    "tags": ["HTML", "CSS", "JavaScripts"],
+    "link": "google.com"
+  }
+]

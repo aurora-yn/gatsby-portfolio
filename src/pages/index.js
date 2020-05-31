@@ -1,20 +1,25 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Header from "../components/header"
 import SEO from "../components/seo"
+import Header from "../components/header"
+import AboutMe from "../sections/aboutMe"
+import Work from "../sections/work"
+import Education from "../sections/education"
+import Skills from "../sections/skills"
+import Projects from "../sections/projects"
 
 const IndexPage = () => (
   <Layout>
+    <SEO title="Youngyun" />
     <Header />
-    <SEO title="About" />
-    <h1>Hi people</h1>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      {/* <Image /> */}
+    <AboutMe />
+    <div className='grid grid-work-edu-col'>
+      <Work />
+      <Education />
     </div>
-    <Link to="/details/">Go to details</Link>
+    <Skills />
+    <Projects />
   </Layout>
 )
 

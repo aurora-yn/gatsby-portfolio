@@ -1,5 +1,6 @@
 import React from 'react'
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+import './themeToggler.css'
 
 export default () => (
   <ThemeToggler>
@@ -18,4 +19,4 @@ export default () => (
       </label>
     )}
   </ThemeToggler>
-)
+) 

@@ -3,7 +3,8 @@ import PropTypes from "prop-types"
 import { Link, useStaticQuery, graphql } from "gatsby"
 
 import Nav from './nav'
-// import "./layout.css"
+import NavLeft from './navLeft'
+// import "./layout.css"  
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -22,14 +23,17 @@ const Layout = ({ children }) => {
         <Link className='nav-logo' to='/'>Y</Link>
         <Nav />
       </div>
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      <div className='container'>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, {` Youngyun Namkung `}
-          {/* <a href="mailto:youngyun.namkung@gmail.com">email here</a> */}
-        </footer>
-      </div>
+      <NavLeft />
+      <main>
+        <div className='container'>
+          {children}
+          <footer>
+            <p>Gatsby, Licensed under MIT</p>
+            <p>© {new Date().getFullYear()}, {` Youngyun Namkung `}</p>
+            
+          </footer>
+        </div>
+      </main>
     </>
   )
 }
