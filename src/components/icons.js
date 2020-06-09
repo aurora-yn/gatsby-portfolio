@@ -7,7 +7,8 @@ import {
   faLaptopCode,
   faGraduationCap,
   faCode,
-  faMagic
+  faMagic,
+  faPalette
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faGithub,
@@ -25,6 +26,7 @@ export {
   faGraduationCap,
   faCode,
   faMagic,
+  faPalette,
 
   faGithub,
   faLinkedin,

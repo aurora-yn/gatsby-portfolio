@@ -1,0 +1,20 @@
+[
+  {
+    "image": "../images/koreanArts/furniture.jpg",
+    "title": "furniture",
+    "description": "furniture",
+    "date": "2011 Spring"
+  },
+  {
+    "image": "../images/koreanArts/goryeoBuddhistPainting.jpg",
+    "title": "Goryeo Buddhist Painting",
+    "description": "furniture",
+    "date": "2010 Fall"
+  },
+  {
+    "image": "../images/koreanArts/goryeoBuddhistPainting.jpg",
+    "title": "Goryeo Buddhist Painting",
+    "description": "furniture",
+    "date": "2010 Fall"
+  }
+]

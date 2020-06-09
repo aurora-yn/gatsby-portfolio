@@ -20,6 +20,10 @@ const IndexPage = () => (
     </div>
     <Skills />
     <Projects />
+    <div>
+      <button>See other works</button>
+      <button>Contact to Youngyun</button>
+    </div>
   </Layout>
 )
 

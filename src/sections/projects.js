@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagic } from '../components/icons'
 
 const Projects = () => {
-  const {data} = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     {
-      data: allProjectsJson {
+      allProjectsJson {
         edges {
           node {
             id
@@ -15,7 +15,13 @@ const Projects = () => {
             description
             tags
             link
-            github
+            image {
+              childImageSharp {
+                fluid(maxWidth: 320) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
           }
         }
       }
@@ -29,13 +35,18 @@ const Projects = () => {
         Projects
       </h3>
       <div className='projects-container'>
-        {data.edges.map(({ node }, index) => (
+        {data.allProjectsJson.edges.map(({ node }, index) => (
           <div key={node.id} className='project'>
+            <GatsbyImage 
+              sizes={{
+                ...node.image.childImageSharp.fluid,
+                aspectRatio: 1 / 1,
+              }}
+            />
             <h5 className='project-title'>{node.title}</h5>
             <p className='project-description'>{node.description}</p>
             <p className='project-tags'>{node.tags}</p>
             <p className='project-link'>{node.link}</p>
-            <p className='project-github'>{node.github}</p>
           </div>
         ) )}
       </div>

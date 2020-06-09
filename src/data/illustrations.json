@@ -1,0 +1,26 @@
+[
+  {
+    "image": "../images/illustrations/london.jpg",
+    "title": "London",
+    "description": "I took the photo while waiting the light at some point in London.",
+    "date": "2011 Spring"
+  },
+  {
+    "image": "../images/illustrations/images-fish-watercolour.jpg",
+    "title": "Fish and Water Colour",
+    "description": "Drawing the story with a nature and an artifact. Objects are supposed to be not related each other",
+    "date": "2010 Fall"
+  },
+  {
+    "image": "../images/illustrations/swiss-snow.jpg",
+    "title": "Somewhere in Switzerland",
+    "description": "After taking this photo, the train was breakdown",
+    "date": "2010 Fall"
+  },
+  {
+    "image": "../images/illustrations/swiss-snow.jpg",
+    "title": "Somewhere in Switzerland",
+    "description": "After taking this photo, the train was breakdown",
+    "date": "2010 Fall"
+  }
+]

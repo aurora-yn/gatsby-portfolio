@@ -8,9 +8,6 @@ const AboutMe = () => {
     <section id='about-me'>
       <h3 className='section-title'><FontAwesomeIcon icon={faUser} /> About Me</h3>
       <div className='grid grid-col-5'>
-        <div id='about-me-img' className='col-span-2'>
-          <Image />
-        </div>
         <div id='about-me-desc' className='col-span-3'>
           <p>Hi there,</p>
           <p>
@@ -28,6 +25,9 @@ const AboutMe = () => {
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit architecto libero vero hic saepe repellendus rem tempore itaque doloribus inventore explicabo eveniet ut quo tenetur, exercitationem, sequi soluta quas quidem.
           Neque debitis obcaecati deleniti numquam perferendis, reprehenderit aliquam. Soluta modi illum aliquid quae nemo aliquam! Ipsum incidunt veniam facere minima, eligendi doloremque nesciunt nostrum doloribus, natus qui, consectetur ullam asperiores.
           </p>
+        </div>
+        <div id='about-me-img' className='col-span-2'>
+          {/* <Image /> */}
         </div>
       </div>
     </section>

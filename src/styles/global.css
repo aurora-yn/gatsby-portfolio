@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=La+Belle+Aurore&display=swap');
+
 * {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   /* font-family: 'Oxygen Mono', monospace;
   font-family: 'Satisfy', cursive; */
+  /* font-family: 'Cedarville Cursive', cursive; */
+  /* font-family: 'La Belle Aurore', cursive; */
 }
 html {
   font-family: sans-serif;
@@ -14,28 +18,40 @@ body {
   margin: 0;
 }
 body.light {
-  --bg: lavenderblush;
-  --primary-color: #381696;
-  --primary-text-color: rgb(39, 39, 39);
+  --bg: #ede3f4;
+  --bg-lighter: rgba(251, 250, 246, 0.7);
+  --primary-color: rgb(163, 109, 201);
+  --primary-text-color: rgb(163, 109, 201);
+  --link-text-color: rgb(54, 50, 58);
   --secondary-color: #10072b;
   --hr: hsla(0, 0%, 0%, 0.2);
   background-color: var(--bg);
 }
 body.dark {
-  --bg: darkslategray;
-  --primary-color: #9984d5;
-  --primary-text-color: #fff;
+  --bg: #302238;
+  --primary-color: #e3d2ec;
+  --primary-text-color: #eaeaea;
   --secondary-color: #66578d;
   --hr: hsla(0, 0%, 100%, 0.2);
   background-color: var(--bg);
 }
-
+#___gatsby {
+  border-top: solid 4px var(--primary-color);
+}
 a {
-  color: var(--primary-text-color);
+  color: var(--link-text-color);
   text-decoration: none;
   background-image: none;
   text-shadow: none;
 }
+a:hover {
+  color: var(--primary-text-color);
+}
+
+.invisible {
+  visibility: hidden;
+}
+
 
 .nav-container,
 .container {
@@ -49,20 +65,15 @@ a {
   justify-content: space-between;
 }
 .nav-logo {
-  font-weight: 900;
-  color: var(--primary-text-color);
-  text-transform: uppercase;
+  min-width: 41px;
 }
 nav {
   display: flex;
   align-items: center;
 }
 nav a {
-  padding-left: 1.2rem;
+  padding-right: 1rem;
   font-size: .82rem;
-}
-nav .nav-toggler {
-  /* padding-right: 20px; */
 }
 
 .left-nav {
@@ -87,11 +98,28 @@ nav .nav-toggler {
 }
 
 .header {
-  background-color: rgba(255, 250, 250, 0.8);
+  background-color: var(--bg-lighter);
+  display: grid;
+  grid-template-columns: 3rem auto 3rem;
+  grid-template-rows: 1rem 400px 170px 1rem;
+  justify-items: center;
+}
+.header-illust {
+  min-width: 300px;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.header section {
+  grid-column-start: 2;
+  grid-row-start: 3;
 }
 .header h1 {
   margin: 0;
-  font-family: 'Satisfy', cursive;
+  color: var(--primary-text-color);
+  /* font-family: 'Satisfy', cursive; */
+  /* font-family: 'Cedarville Cursive', cursive; */
+  font-family: 'La Belle Aurore', cursive;
+  font-weight: normal;
 }
 .header p,
 code div {
@@ -102,11 +130,12 @@ code .pl-2 { padding-left: 2rem; }
 code .pl-4 { padding-left: 4rem; }
 .header .social-media {
   padding: 1rem 2rem;
+  text-align: center;
 }
 .header .social-media a {
   font-size: 1.3rem;
-  padding-right: 1rem;
-  margin-right: 1rem;
+  padding: 0 .3rem;
+  margin: 0 1rem;
 }
 main {
   margin: 0 2rem;
@@ -119,8 +148,10 @@ main {
 
 .section-title {
   font-size: .86rem;
+  margin: 0 0 1.6rem 0;
   text-transform: uppercase;
-  color: var(--primary-text-color);
+  color: var(--link-text-color);
+  position: sticky;
 }
 .section-title .svg-inline--fa {
   margin-right: 8px;
@@ -132,9 +163,10 @@ main {
   align-self: center;
 }
 #about-me-desc {
-  font-size: .94rem;
+  font-size: .84rem;
   line-height: 1.4;
   text-align: justify;
+  color: var(--link-text-color);
 }
 
 .grid-work-edu-col {
@@ -216,6 +248,19 @@ main {
 .project-link,
 .project-github {
   font-size: .8rem;
+}
+
+.illustrations-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.illustration {
+  margin-right: 2.5rem;
+  max-width: 340px;
+}
+.illustration-title {
+  margin: 0;
+  font-size: 1rem;
 }
 
 /* GRID

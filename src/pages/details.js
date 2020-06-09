@@ -3,13 +3,14 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import Illustration from '../sections/illustration'
+import KoreanArt from '../sections/koreanArt'
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Details" />
-    <h1>Hi there</h1>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-
-    </div>
+    <Illustration />
+    <KoreanArt />
   </Layout>
 )
 
