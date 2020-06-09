@@ -22,16 +22,17 @@ const Header = () => {
       <div className='header-illust'>
         <GatsbyImage {...data.illust.childImageSharp} />
       </div>
-      <section>
-
+      <div className='header-desc'>
         <h1>youngyun namkung</h1>
-        <p>= [ Developer, Designer, ... ]</p>
+        <code>
+          <div>= [ Developer, Designer, Love yoga and cooking ... ]</div>
+        </code>
         <div className='social-media'>
-          <Link to='/'><FontAwesomeIcon icon={faLinkedin} /></Link>
-          <Link to='/'><FontAwesomeIcon icon={faGithub} /></Link>
-          <Link to='/'><FontAwesomeIcon icon={faInstagram} /></Link>
+          <a href='https://www.linkedin.com/in/auroray' target='_blank'><FontAwesomeIcon icon={faLinkedin} /></a>
+          <a href='https://github.com/aurora-yn' target='_blank'><FontAwesomeIcon icon={faGithub} /></a>
+          <a href='https://www.instagram.com/yeongyun.nk' target='_blank'><FontAwesomeIcon icon={faInstagram} /></a>
         </div>
-      </section>
+      </div>
       <div>
         {/* <code>
           <div>&#123;</div>
