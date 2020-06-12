@@ -1,7 +1,9 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import { faUser } from '../components/icons'
+import SectionTitle from '../components/sectionTitle'
+
 
 const AboutMe = () => {
   const data = useStaticQuery(graphql`
@@ -14,7 +16,7 @@ const AboutMe = () => {
 
   return (
     <section id='about-me'>
-      <h3 className='section-title'><FontAwesomeIcon icon={faUser} /> About Me</h3>
+      <SectionTitle icon={faUser} title='About me' />
       <div className='grid grid-col-5'>
         <div 
           id='about-me-desc' className='col-span-3'

@@ -1,8 +1,9 @@
 import React from 'react'
 import { graphql, useStaticQuery } from "gatsby"
 import GatsbyImage from "gatsby-image"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import { faPalette } from '../components/icons'
+import SectionTitle from '../components/sectionTitle'
 
 const Illustration = () => {
   const data = useStaticQuery(graphql`
@@ -28,10 +29,7 @@ const Illustration = () => {
 
   return (
     <section id='illustration'>
-      <h3 className='section-title'>
-        <FontAwesomeIcon icon={faPalette} /> 
-        Illustration
-      </h3>
+      <SectionTitle icon={faPalette} title='Illustration' />
       <div className='illustrations-container'>
         {data.allIllustrationsJson.edges.map(({ node }, index) => (
           <div key={index} className='illustration'>

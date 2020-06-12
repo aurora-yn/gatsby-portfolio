@@ -1,14 +1,12 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import { faCode } from '../components/icons'
+import SectionTitle from '../components/sectionTitle'
 
 const Skills = () => {
   return (
     <section id='skills'>
-      <h3 className='section-title'>
-      <FontAwesomeIcon icon={faCode} /> 
-        Skills
-      </h3>
+      <SectionTitle icon={faCode} title='Skills' />
       <div>
         <code>
           <div>&#123;</div>

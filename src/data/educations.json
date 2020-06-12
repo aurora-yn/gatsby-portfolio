@@ -1,0 +1,20 @@
+[
+  {
+    "major": "Computer Applications Development",
+    "organisation": "Conestoga College",
+    "date": "2019.Sep - Present",
+    "image": "../images/educations/conestoga.png"
+  },
+  {
+    "major": "Visual Communication Design",
+    "organisation": "Myongji University",
+    "date": "2009.Mar - 2014.Feb",
+    "image": "../images/educations/myongji.png"
+  },
+  {
+    "major": "Sanbon High School",
+    "organisation": "Public High School",
+    "date": "2006.Mar - 2009.Feb",
+    "image": "../images/educations/sanbon.png"
+  }
+]

@@ -184,7 +184,7 @@ main {
 .time-bar {
   width: .25rem;
   border-radius: 999px;
-  background-color: rgba(160, 174, 192, .5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 @media screen and (min-width: 768px) {
   .time-bar {
@@ -201,31 +201,36 @@ main {
 .time-point {
   width: .75rem;
   height: .75rem;
-  margin-top: .75rem;
+  margin-top: .6rem;
   border-radius: 999px;
-  background-color: rgba(56, 56, 56, 0.9);
-  box-shadow: 0 10px 15px -3px rgba(0,0,0,.8), 0 4px 6px -2px rgba(0,0,0,.05);
+  background-color: rgb(251, 247, 255);
+  box-shadow: 0 4px 8px -5px rgba(0,0,0,.8), 0 3px 4px -2px rgba(0,0,0,.05);
 }
 .time-desc {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 .time-desc .logo {
   width: 32px;
   height: 32px;
-  border-radius: 999px;
-  background-color: rgba(66, 66, 66, 0.9);
+}
+.time-desc .logo.wide-logo {
+  width: 94px;
+  height: 32px;
+}
+.time-desc h5 {
+  font-family: 'Lato', sans-serif;
 }
 .time-desc .title {
-  margin: 1rem 0 0 0;
+  margin: .8rem 0 0 0;
 }
 .time-desc .organisation {
   font-weight: normal;
-  margin: 0;
-  font-size: .85rem;
-}
-.time-desc .date {
   margin: .3rem 0 0 0;
   font-size: .7rem;
+}
+.time-desc .date {
+  margin: .7rem 0 0 0;
+  font-size: .65rem;
 }
 
 .projects-container {
